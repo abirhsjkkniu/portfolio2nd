@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Research — Md. Abir Hossain Shihab</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,700&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <link rel="stylesheet" href="../assets/css/sidebar.css" />
+  <style>
+    .research-type {
+      display: inline-block;
+      padding: 4px 14px;
+      border-radius: 30px;
+      font-family: var(--font-mono);
+      font-size: 0.65rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      margin-bottom: 14px;
+      border: 1px solid;
+    }
+    .type-thesis { border-color: var(--accent); color: var(--accent); background: rgba(201,168,76,0.08); }
+    .type-field  { border-color: #6ab0c9; color: #6ab0c9; background: rgba(106,176,201,0.08); }
+    .type-ongoing{ border-color: #7bcfa0; color: #7bcfa0; background: rgba(123,207,160,0.08); }
+
+    .research-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 36px;
+      margin-bottom: 28px;
+      transition: all 0.35s var(--ease);
+      position: relative;
+      overflow: hidden;
+    }
+    .research-card::before {
+      content: '';
+      position: absolute;
+      left: 0; top: 0; bottom: 0;
+      width: 3px;
+      background: var(--accent);
+      transform: scaleY(0);
+      transform-origin: bottom;
+      transition: transform 0.35s var(--ease);
+    }
+    .research-card:hover {
+      border-color: var(--border-hover);
+      transform: translateX(4px);
+      box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+    }
+    .research-card:hover::before { transform: scaleY(1); }
+
+    .research-title {
+      font-family: var(--font-display);
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: var(--text-primary);
+      line-height: 1.35;
+      margin-bottom: 8px;
+    }
+    .research-inst {
+      font-family: var(--font-mono);
+      font-size: 0.7rem;
+      letter-spacing: 0.15em;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      margin-bottom: 18px;
+    }
+    .research-bullet {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 10px;
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+    .research-bullet::before {
+      content: '◦';
+      color: var(--accent);
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+
+    .interest-card {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      padding: 20px 24px;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      transition: all 0.3s var(--ease);
+    }
+    .interest-card:hover {
+      border-color: var(--accent-dim);
+      background: var(--bg-hover);
+    }
+    .interest-icon {
+      font-size: 1.6rem;
+      width: 50px;
+      text-align: center;
+    }
+    .interest-name {
+      font-family: var(--font-display);
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--text-primary);
+    }
+  </style>
+</head>
+<body>
+
+<div class="sidebar-overlay"></div>
+<button class="sidebar-toggle" aria-label="Toggle menu">
+  <span class="toggle-line"></span><span class="toggle-line"></span><span class="toggle-line"></span>
+</button>
+
+<nav class="sidebar">
+  <div class="sidebar-profile">
+    <div class="profile-avatar">AHS</div>
+    <div class="profile-name">Md. Abir Hossain Shihab</div>
+    <div class="profile-title">LL.M Candidate · Advocate<br>Dhaka Bar Association</div>
+  </div>
+  <ul class="sidebar-nav">
+    <li class="sidebar-nav-section">Navigation</li>
+    <li><a href="../index.html"><span class="nav-icon"><i class="fas fa-home"></i></span> Home</a></li>
+    <li><a href="education.html"><span class="nav-icon"><i class="fas fa-graduation-cap"></i></span> Education</a></li>
+    <li><a href="research.html"><span class="nav-icon"><i class="fas fa-scroll"></i></span> Research</a></li>
+    <li><a href="experience.html"><span class="nav-icon"><i class="fas fa-briefcase"></i></span> Experience</a></li>
+    <li><a href="achievements.html"><span class="nav-icon"><i class="fas fa-trophy"></i></span> Achievements</a></li>
+    <li><a href="skills.html"><span class="nav-icon"><i class="fas fa-layer-group"></i></span> Skills</a></li>
+    <li><a href="activities.html"><span class="nav-icon"><i class="fas fa-users"></i></span> Activities</a></li>
+    <li><a href="contact.html"><span class="nav-icon"><i class="fas fa-paper-plane"></i></span> Contact</a></li>
+  </ul>
+  <div class="sidebar-footer">
+    <div class="sidebar-social">
+      <a href="mailto:ahossainshihab@gmail.com"><i class="fas fa-envelope"></i></a>
+      <a href="https://linkedin.com/in/abirhs" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      <a href="tel:+8801726422900"><i class="fas fa-phone"></i></a>
+    </div>
+    <div class="sidebar-credit">© 2025 Md. Abir Hossain Shihab</div>
+  </div>
+</nav>
+
+<div class="main-wrapper">
+
+  <div class="page-hero">
+    <div class="page-hero-ornament">RES</div>
+    <div class="page-hero-eyebrow">Scholarly Work</div>
+    <h1 class="page-hero">Research</h1>
+    <p class="page-hero">Doctrinal and socio-legal inquiry at the intersection of international law, human rights, and justice.</p>
+  </div>
+
+  <div class="content-area">
+
+    <!-- ── Research Interests ── -->
+    <div class="section-label">Areas of Focus</div>
+    <h2 class="section-title">Research Interests</h2>
+    <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(220px,1fr)); gap:16px; margin-bottom:60px;">
+      <div class="interest-card" data-aos="fade-up">
+        <div class="interest-icon">⚖️</div>
+        <div><div class="interest-name">International Refugee Law</div><div style="color:var(--text-muted); font-size:0.85rem; margin-top:4px;">Protection mechanisms & non-refoulement</div></div>
+      </div>
+      <div class="interest-card" data-aos="fade-up" data-aos-delay="80">
+        <div class="interest-icon">🕊️</div>
+        <div><div class="interest-name">Human Rights Law</div><div style="color:var(--text-muted); font-size:0.85rem; margin-top:4px;">Regional courts & treaty bodies</div></div>
+      </div>
+      <div class="interest-card" data-aos="fade-up" data-aos-delay="160">
+        <div class="interest-icon">🌿</div>
+        <div><div class="interest-name">Environmental Law</div><div style="color:var(--text-muted); font-size:0.85rem; margin-top:4px;">EIA, governance & sustainability</div></div>
+      </div>
+      <div class="interest-card" data-aos="fade-up" data-aos-delay="240">
+        <div class="interest-icon">🛡️</div>
+        <div><div class="interest-name">Humanitarian Law</div><div style="color:var(--text-muted); font-size:0.85rem; margin-top:4px;">Armed conflict & IHL principles</div></div>
+      </div>
+    </div>
+
+    <!-- ── Research Projects ── -->
+    <div class="section-label">Projects & Theses</div>
+    <h2 class="section-title">Research Projects</h2>
+
+    <!-- LLM Thesis -->
+    <div class="research-card" data-aos="fade-up">
+      <span class="research-type type-thesis">LL.M Thesis</span>
+      <div class="research-title">Beyond the 1951 Refugee Convention: The Role of Regional Human Rights Courts in the Development of International Refugee Law</div>
+      <div class="research-inst">Jatiya Kabi Kazi Nazrul Islam University · 2025–2026</div>
+      <div class="research-bullet">Examines the contribution of regional human rights courts to the development of International Refugee Law beyond the 1951 Convention Relating to the Status of Refugees.</div>
+      <div class="research-bullet">Analyzes jurisprudence of the European Court of Human Rights, the Inter-American Court of Human Rights, and African Court on Human and Peoples' Rights.</div>
+      <div class="research-bullet">Evaluates how regional human rights mechanisms strengthen refugee protection through principles such as non-refoulement and procedural safeguards.</div>
+      <div style="margin-top:16px; display:flex; flex-wrap:wrap; gap:8px;">
+        <span class="badge-luxe">Non-Refoulement</span>
+        <span class="badge-luxe">ECtHR</span>
+        <span class="badge-luxe">IACtHR</span>
+        <span class="badge-luxe">ACtHPR</span>
+        <span class="badge-luxe">Refugee Protection</span>
+      </div>
+    </div>
+
+    <!-- LLB Thesis -->
+    <div class="research-card" data-aos="fade-up" data-aos-delay="60">
+      <span class="research-type type-thesis">LL.B Thesis</span>
+      <div class="research-title">Safeguarding Justice: Call for a Robust Witness Protection Regime in Bangladesh</div>
+      <div class="research-inst">Jatiya Kabi Kazi Nazrul Islam University · 2024</div>
+      <div class="research-bullet">Investigated gaps in the witness protection framework in Bangladesh, proposing legislative reforms for a comprehensive protection regime.</div>
+      <div style="margin-top:16px; display:flex; flex-wrap:wrap; gap:8px;">
+        <span class="badge-luxe">Criminal Justice</span>
+        <span class="badge-luxe">Bangladesh Law</span>
+        <span class="badge-luxe">Legislative Reform</span>
+      </div>
+    </div>
+
+    <!-- Field Research -->
+    <div class="research-card" data-aos="fade-up" data-aos-delay="120">
+      <span class="research-type type-field">Field Research</span>
+      <div class="research-title">Issues and Challenges of Child Labor — Hotels, Restaurants & Retail Stores of Trishal Upazila</div>
+      <div class="research-inst">JKKNIU Field Research · 2nd Year</div>
+      <div class="research-bullet">Survey-based study documenting the conditions of child labor in the hospitality and retail sectors of Trishal Upazila, Mymensingh District.</div>
+      <div style="margin-top:16px; display:flex; flex-wrap:wrap; gap:8px;">
+        <span class="badge-luxe">Child Labor</span>
+        <span class="badge-luxe">Survey Research</span>
+        <span class="badge-luxe">Socio-Legal</span>
+      </div>
+    </div>
+
+    <div class="research-card" data-aos="fade-up" data-aos-delay="160">
+      <span class="research-type type-field">Field Research</span>
+      <div class="research-title">A Study in Mymensingh District on the Role of Concerned Authorities Prescribed in The Children Act, 2013: Law and Practice</div>
+      <div class="research-inst">JKKNIU Field Research · 3rd Year</div>
+      <div class="research-bullet">Examined the practical implementation of the Children Act 2013 by relevant authorities across Mymensingh District, identifying gaps between legislative mandate and ground-level practice.</div>
+      <div style="margin-top:16px; display:flex; flex-wrap:wrap; gap:8px;">
+        <span class="badge-luxe">Children Act 2013</span>
+        <span class="badge-luxe">Law & Practice</span>
+        <span class="badge-luxe">Bangladesh</span>
+      </div>
+    </div>
+
+    <!-- Ongoing -->
+    <div class="research-card" data-aos="fade-up" data-aos-delay="200">
+      <span class="research-type type-ongoing">Ongoing Research</span>
+      <div class="research-title">Public Participation in Environmental Governance: Enhancing the Efficacy of Environmental Impact Assessment (EIA) for Sustainable Development in Bangladesh</div>
+      <div class="research-inst">Independent Research · 2025–Present</div>
+      <div class="research-bullet">Investigating the role of public participation in strengthening Environmental Impact Assessment (EIA) processes in Bangladesh as a mechanism for sustainable development governance.</div>
+      <div style="margin-top:16px; display:flex; flex-wrap:wrap; gap:8px;">
+        <span class="badge-luxe">EIA</span>
+        <span class="badge-luxe">Environmental Governance</span>
+        <span class="badge-luxe">Public Participation</span>
+        <span class="badge-luxe">Sustainable Development</span>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script src="../assets/js/sidebar.js"></script>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

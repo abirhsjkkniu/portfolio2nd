@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Md. Abir Hossain Shihab</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,700&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <link rel="stylesheet" href="../assets/css/sidebar.css" />
+  <style>
+    .contact-layout {
+      display: grid;
+      grid-template-columns: 1fr 1.5fr;
+      gap: 60px;
+      align-items: start;
+    }
+
+    @media (max-width: 900px) {
+      .contact-layout { grid-template-columns: 1fr; }
+    }
+
+    .availability-dot {
+      display: inline-block;
+      width: 8px; height: 8px;
+      border-radius: 50%;
+      background: #4ade80;
+      margin-right: 8px;
+      box-shadow: 0 0 0 3px rgba(74,222,128,0.2);
+      animation: blink-dot 2s ease-in-out infinite;
+    }
+
+    @keyframes blink-dot {
+      0%, 100% { opacity: 1; }
+      50%       { opacity: 0.4; }
+    }
+
+    .form-success {
+      text-align: center;
+      padding: 40px;
+      display: none;
+    }
+    .form-success.visible { display: block; }
+
+    .success-icon {
+      font-size: 3rem;
+      margin-bottom: 16px;
+      animation: scaleIn 0.5s var(--ease);
+    }
+
+    select.form-control-luxe option {
+      background: #0d0d1e;
+      color: #ece8e0;
+    }
+  </style>
+</head>
+<body>
+
+<div class="sidebar-overlay"></div>
+<button class="sidebar-toggle" aria-label="Toggle menu">
+  <span class="toggle-line"></span><span class="toggle-line"></span><span class="toggle-line"></span>
+</button>
+
+<nav class="sidebar">
+  <div class="sidebar-profile">
+    <div class="profile-avatar">AHS</div>
+    <div class="profile-name">Md. Abir Hossain Shihab</div>
+    <div class="profile-title">LL.M Candidate · Advocate<br>Dhaka Bar Association</div>
+  </div>
+  <ul class="sidebar-nav">
+    <li class="sidebar-nav-section">Navigation</li>
+    <li><a href="../index.html"><span class="nav-icon"><i class="fas fa-home"></i></span> Home</a></li>
+    <li><a href="education.html"><span class="nav-icon"><i class="fas fa-graduation-cap"></i></span> Education</a></li>
+    <li><a href="research.html"><span class="nav-icon"><i class="fas fa-scroll"></i></span> Research</a></li>
+    <li><a href="experience.html"><span class="nav-icon"><i class="fas fa-briefcase"></i></span> Experience</a></li>
+    <li><a href="achievements.html"><span class="nav-icon"><i class="fas fa-trophy"></i></span> Achievements</a></li>
+    <li><a href="skills.html"><span class="nav-icon"><i class="fas fa-layer-group"></i></span> Skills</a></li>
+    <li><a href="activities.html"><span class="nav-icon"><i class="fas fa-users"></i></span> Activities</a></li>
+    <li><a href="contact.html"><span class="nav-icon"><i class="fas fa-paper-plane"></i></span> Contact</a></li>
+  </ul>
+  <div class="sidebar-footer">
+    <div class="sidebar-social">
+      <a href="mailto:ahossainshihab@gmail.com"><i class="fas fa-envelope"></i></a>
+      <a href="https://linkedin.com/in/abirhs" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      <a href="tel:+8801726422900"><i class="fas fa-phone"></i></a>
+    </div>
+    <div class="sidebar-credit">© 2025 Md. Abir Hossain Shihab</div>
+  </div>
+</nav>
+
+<div class="main-wrapper">
+
+  <div class="page-hero">
+    <div class="page-hero-ornament">MSG</div>
+    <div class="page-hero-eyebrow">Let's Connect</div>
+    <h1 class="page-hero">Contact</h1>
+    <p class="page-hero">Open to research collaborations, academic discussions, and professional opportunities.</p>
+  </div>
+
+  <div class="content-area" style="max-width: 100%; padding: 70px 60px;">
+
+    <div class="contact-layout">
+
+      <!-- ── Left: Info ── -->
+      <div data-aos="fade-right">
+
+        <div style="margin-bottom: 36px;">
+          <div class="section-label">Availability</div>
+          <p style="color:var(--text-secondary); font-size:0.95rem; line-height:1.8; margin-top:8px;">
+            <span class="availability-dot"></span>
+            <strong style="color:#4ade80;">Available</strong> for collaborations,<br>research partnerships, and academic discourse.
+          </p>
+        </div>
+
+        <div class="section-label" style="margin-bottom:14px;">Direct Contact</div>
+
+        <a href="mailto:ahossainshihab@gmail.com" class="contact-info-card">
+          <div class="contact-icon-wrap"><i class="fas fa-envelope"></i></div>
+          <div>
+            <div style="font-family:var(--font-mono); font-size:0.65rem; letter-spacing:0.15em; color:var(--text-muted); text-transform:uppercase; margin-bottom:3px;">Email</div>
+            <div style="color:var(--text-primary); font-size:0.95rem;">ahossainshihab@gmail.com</div>
+          </div>
+        </a>
+
+        <a href="tel:+8801726422900" class="contact-info-card">
+          <div class="contact-icon-wrap"><i class="fas fa-phone"></i></div>
+          <div>
+            <div style="font-family:var(--font-mono); font-size:0.65rem; letter-spacing:0.15em; color:var(--text-muted); text-transform:uppercase; margin-bottom:3px;">Phone</div>
+            <div style="color:var(--text-primary); font-size:0.95rem;">+880 1726 422900</div>
+          </div>
+        </a>
+
+        <div class="contact-info-card" style="text-decoration:none;">
+          <div class="contact-icon-wrap"><i class="fas fa-map-marker-alt"></i></div>
+          <div>
+            <div style="font-family:var(--font-mono); font-size:0.65rem; letter-spacing:0.15em; color:var(--text-muted); text-transform:uppercase; margin-bottom:3px;">Location</div>
+            <div style="color:var(--text-primary); font-size:0.95rem;">Trishal, Mymensingh, Bangladesh</div>
+          </div>
+        </div>
+
+        <a href="https://linkedin.com/in/abirhs" target="_blank" class="contact-info-card">
+          <div class="contact-icon-wrap"><i class="fab fa-linkedin-in"></i></div>
+          <div>
+            <div style="font-family:var(--font-mono); font-size:0.65rem; letter-spacing:0.15em; color:var(--text-muted); text-transform:uppercase; margin-bottom:3px;">LinkedIn</div>
+            <div style="color:var(--text-primary); font-size:0.95rem;">linkedin.com/in/abirhs</div>
+          </div>
+        </a>
+
+        <div style="margin-top: 36px;" class="card-luxe">
+          <div class="section-label" style="margin-bottom: 10px;">Open To</div>
+          <div style="display:flex; flex-wrap:wrap; gap:8px; margin-top:10px;">
+            <span class="badge-luxe">Research Collaboration</span>
+            <span class="badge-luxe">Academic Writing</span>
+            <span class="badge-luxe">Moot Court Coaching</span>
+            <span class="badge-luxe">Legal Consultation</span>
+            <span class="badge-luxe">Speaking Engagements</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- ── Right: Form ── -->
+      <div data-aos="fade-left" data-aos-delay="100">
+        <div class="section-label" style="margin-bottom:14px;">Send a Message</div>
+
+        <div class="card-luxe" style="padding: 36px;">
+
+          <div id="form-container">
+            <form id="contact-form" autocomplete="off">
+
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                <div class="form-group">
+                  <label class="form-label-luxe">Your Name</label>
+                  <input type="text" class="form-control-luxe" placeholder="Full Name" required />
+                </div>
+                <div class="form-group">
+                  <label class="form-label-luxe">Email Address</label>
+                  <input type="email" class="form-control-luxe" placeholder="you@email.com" required />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label-luxe">Subject</label>
+                <select class="form-control-luxe">
+                  <option value="">Select a topic...</option>
+                  <option>Research Collaboration</option>
+                  <option>Academic Discussion</option>
+                  <option>Moot Court</option>
+                  <option>Professional Opportunity</option>
+                  <option>General Inquiry</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label-luxe">Your Message</label>
+                <textarea class="form-control-luxe" placeholder="Write your message here..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn-luxe">
+                <i class="fas fa-paper-plane"></i>
+                <span>Send Message</span>
+              </button>
+
+            </form>
+          </div>
+
+          <div class="form-success" id="form-success">
+            <div class="success-icon">✉️</div>
+            <div style="font-family:var(--font-display); font-size:1.4rem; font-weight:600; color:var(--text-primary); margin-bottom:10px;">Message Sent!</div>
+            <div style="color:var(--text-secondary); font-size:0.95rem;">Thank you for reaching out. I'll respond as soon as possible.</div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script src="../assets/js/sidebar.js"></script>
+<script src="../assets/js/main.js"></script>
+
+<script>
+  document.getElementById('contact-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    document.getElementById('form-container').style.display = 'none';
+    document.getElementById('form-success').classList.add('visible');
+  });
+</script>
+</body>
+</html>
